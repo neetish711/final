@@ -1,0 +1,37 @@
+<div class="container text-center">
+    <h2>Your profile details</h2>
+</div>
+<div class="bootstrap-wrapper">
+    <div class="container">
+        <div class="container text-center">
+            <img src="https://t3.ftcdn.net/jpg/03/46/83/96/360_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg"
+            alt=""
+            class="profile-image"
+            />
+            <h3>Username</h3>
+        </div>
+
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                <table class="table text-center">
+                    <tr>
+                        <td>Username</td>
+                        <td>{{user.username}}</td>
+                    </tr>
+                    <tr>
+                        <td>Userid</td>
+                        <td>{{user.id}}</td>
+                    </tr>
+                    <tr>
+                        <td>Phone</td>
+                        <td>Profile user</td>
+                    </tr>
+                    <tr>
+                        <td>Role</td>
+                        <td>{{user.authorities[0].authority}}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

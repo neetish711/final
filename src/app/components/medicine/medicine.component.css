@@ -1,0 +1,52 @@
+html{
+    background-color: white;
+}
+.welcome-div{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image: linear-gradient(-45deg, #2802ff,#b6b7f3,#2802ff);
+    text-align: center;
+}
+body{
+    max-width:1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.my-box{
+    background-color: aqua;
+
+}
+body .medicine{
+    width:70%;
+   
+}
+body .medicine p{
+    margin-left: 5px;
+    padding-left: 5px;
+}
+body .aside{
+    width:30%;
+    float:right;
+    background-color: yellowgreen;
+    
+}
+button .profile:hover{
+    background-color: aquamarine;
+}
+.scroll-to-top{
+   padding-left: 200px;
+   background-color: linen;
+   
+}
+.group:before,
+.group:after {
+	content: "";
+	display: table;
+}
+
+.group:after {
+	clear: both;
+}
+
+.group {
+	zoom: 1;
+}

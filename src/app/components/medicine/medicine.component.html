@@ -1,0 +1,157 @@
+<html>
+<div class="container">
+    <header>
+        <div class=" p-2 welcome-div" style="color:rgb(48, 3, 94) ;">
+            <h2><b>Showing all medicines</b></h2>
+        </div>
+        <div class=" p-2 brwose-div"
+            style="--bs-bg-opacity: .5; background-image: linear-gradient(-45deg,#7fd6f0,#5394bc,#2a56a7,rgb(0, 47, 255));">
+            <p style="text-align: center; color:rgb(254, 254, 254);"><b>Browse the medicines</b></p>
+            <div class="aside" style="background-image: linear-gradient(-45deg,rgb(0, 94, 128),#53b4d1);">
+                <aside style="text-align: center; color:rgb(255, 255, 255); font-size: larger;">
+                    <p><b>Ayurveda is an alternative medicine system with historical roots in the Indian subcontinent.
+                            The theory and practice of Ayurveda is pseudoscientific. Ayurveda is heavily practiced in
+                            India and Nepal, where around 80% of the population report using it.</b></p>
+                    <p>Read more by clicking <a href="https://en.wikipedia.org/wiki/Ayurveda"
+                            style="color: rgb(255, 255, 255);">here</a></p>
+                </aside>
+            </div>
+
+        </div>
+    </header>
+
+    <body class="group">
+        <p></p>
+        <div class="medicines ">
+            <link
+                href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/4.9.95/css/materialdesignicons.css"
+                rel="stylesheet">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"
+                integrity="sha256-Zr3vByTlMGQhvMfgkQ5BtWRSKBGa2QlspKYJnkjZTmo=" crossorigin="anonymous"></script>
+            <link rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css"
+                integrity="sha256-mLBIhmBvigTFWPSCtvdu6a76T+3Xyt+K571hupeFLg4=" crossorigin="anonymous" />
+            <div class="container" style="background-image:linear-gradient(-45deg,#23D5AB,#6725fe,#7f34da,#23A6D5);">
+
+
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="left-sidebar">
+                            <div class="accordion" id="accordionExample">
+                                <div class="card mt-4">
+                                    <a data-toggle="collapse" class="job-list" aria-expanded="true"
+                                        aria-controls="collapseOne">
+                                        <div class="card-header" id="headingOne"
+                                            style="background-color:rgba(90, 225, 240, 0.897);border-radius: 2px solid black; ">
+                                            <h6 class="mb-0  f-18" style="color: rgb(69, 56, 56);">Click below to go to
+                                                profile</h6><br>
+
+                                            <button type="button" name="profile-button"
+                                                routerLink="/user-dashboard/myprofile" class="profile-button">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-person-lines-fill"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2z" />
+                                                </svg>
+                                            </button>
+                                            <br>
+                                            <h6 class="mb-0  f-18" style="color:rgb(67, 53, 53) ;">Click below to view
+                                                cart</h6><br>
+                                            <button type="button" name="profile-button"
+                                                routerLink="/user-dashboard/cart" class="profile-button">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-basket2" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M4 10a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0v-2zm3 0a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0v-2zm3 0a1 1 0 1 1 2 0v2a1 1 0 0 1-2 0v-2z" />
+                                                    <path
+                                                        d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-.623l-1.844 6.456a.75.75 0 0 1-.722.544H3.69a.75.75 0 0 1-.722-.544L1.123 8H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.163 8l1.714 6h8.246l1.714-6H2.163z" />
+                                                </svg>
+
+                                            </button>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-9">
+                        <div class="candidates-listing-item">
+                            <div class="list-grid-item mt-4 p-2">
+                                <div class="row">
+                                    <div class="col-md-9">
+                                        <div *ngFor="let med of medicine" style="margin-left:50px">
+                                            <div class="candidates-list-desc job-single-meta  pt-2"
+                                                style="background-color:rgb(255, 255, 255);padding: 20px;">
+                                                <img src="https://th.bing.com/th/id/R.153e1a4684761a3aff887538f26a6bb2?rik=sKwdfVR%2fA8pEPA&riu=http%3a%2f%2fclipartstation.com%2fwp-content%2fuploads%2f2017%2f11%2fayurveda-symbol-clipart-5.jpg&ehk=gS1yAJfdChqMBgnR%2falY63NXKvbvyTgcBNfzi1QeL%2bk%3d&risl=&pid=ImgRaw&r=0"
+                                                    alt="Medicine1" class="rounded-circle" width="150"
+                                                    style="background-color:aqua ; margin-left: 140px;">
+                                                <h5 class="mb-2 f-19"><a href="#" class="text-dark"
+                                                        style="text-align:center">{{med.medicineName}}</a></h5>
+                                                <ul class="list-inline mb-0"
+                                                    style="border:2px solid;border-radius: 5px;border-color: rgba(163, 220, 147, 0.797); padding: 10px; padding-left: 50px;">
+                                                    <li class="list-inline-item mr-4">
+                                                        <p class="text-muted f-15 mb-0">
+                                                            <!--<i class="mdi mdi-account mr-1"></i>-->
+                                                        </p>
+                                                    </li>
+
+                                                    <li class="list-inline-item mr-4">
+                                                        <p class="f-15 mb-0"><a href="" class="text-muted">
+                                                                <!--<i class="mdi mdi-map-marker mr-1"></i>-->{{med.companyName}}
+                                                            </a></p>
+                                                    </li>
+
+                                                    <li class="list-inline-item">
+                                                        <p class="text-muted f-15 mb-0"><i
+                                                                class="mdi mdi-currency-inr mr-1"></i>{{med.medicineCost}}
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                                <p class="text-muted mt-1 mb-0">These preparations improve digestion and
+                                                    metabolism in the body. </p>
+
+
+                                                <div class="col-md-3" style="margin-left: 150px;">
+                                                    <div class="candidates-list-fav-btn text-right">
+                                                        <div class="candidates-listing-btn mt-4">
+                                                            <a href="#" class="btn btn-outline-success">Add to Cart</a>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <br>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+
+
+                            </div>
+
+
+
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </body>
+
+</div>
+
+</html>

@@ -1,0 +1,29 @@
+<h1>Cart</h1>
+  <div style="width: 66%;padding-left: 10px;">
+    <table class="table table-striped">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Medicine Id</th>
+          <th scope="col">Medicine name</th>
+          <th scope="col">Medicine Cost</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let m of mediList; index as i">
+          <th scope="row">{{ i + 1 }}</th>
+          <td>{{ m.medicineId }}</td>
+          <td>{{ m.medicineName}}</td>
+          <td>{{ m.medicineCost}}</td>
+        </tr>
+      </tbody>
+    </table>
+  
+<!-- <button class="btn btn-primary" type="button" (click)="totalCost()"> total cost</button> -->
+<p>Total cost of the order: {{cost}}</p>
+
+<br>
+<button class="btn btn-success btn-lg float-right" type="button" (click)="place_order()" routerLink="/orderplace">Place
+  Order</button>
+
+</div>

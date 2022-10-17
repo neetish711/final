@@ -1,0 +1,12 @@
+<div style="padding-left: 30px;">
+    <h3>Your order is placed and here are the details of your order</h3>
+
+<div class="card text-center" style="width: 25%;margin-left: 20px;">
+<h5>OrderID : {{ord.orderId}}</h5>
+Order Date : {{ ord.orderDate | date }}<br>
+Expected Dispatch Date  : {{ ord.dispatchDate | date }}<br>
+Total Cost : {{ ord.cost}}<br>
+</div>
+<h4>hope you get your order soon....</h4>
+<img src="assets/delivery-van.jpg" alt="order_placed.." width="500px">
+</div>
